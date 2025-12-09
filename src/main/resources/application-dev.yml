@@ -1,0 +1,19 @@
+spring:
+  data:
+    redis:
+      sentinel:
+        master: mymaster
+        nodes:
+          - localhost:26379
+          - localhost:26380
+          - localhost:26381
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+logging:
+  level:
+    com.example.redisrabbit: DEBUG
+
